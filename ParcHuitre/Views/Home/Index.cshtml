@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>Parc informatique</title>
+    </head>
+    <body>
+        <center>
+            <table style='text-align:center;vertical-align:middle' border="1" cellpadding="10" cellspacing="0">
+                <tr bgcolor="#29a9c3">
+                    <th>ID Matériel</th>
+                    <th>Nom</th>
+                    <th>Marque</th>
+                    <th>Reference</th>
+                    <th>ID Service</th>
+                    <th>Utilisation</th>
+                    <th>Date d'achat</th>
+                    <th>Durée de la garantie</th>
+                    <th>Date de fin de garantie</th>
+                </tr>
+                <tr>
+                    @Html.Raw(ViewData["resultat"])
+                </tr>
+            </table>
+        </center>
+    </body>
+</html>
